@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h4>
+            <span>Uma seleção de podutos</span>
+            <strong>Especial para você</strong>
+            <span>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</span>
+        </h4>
+        <nav>
+            <ul>
+                <li><button>Conheça a Linx</button></li>
+                <li><button>Ajude o algoritmo</button></li>
+                <li><button>Seus produtos</button></li>
+                <li><button>Compartilhe</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-form">
+            <article>
+                <h3>
+                    Ajuda o algoritimo a ser mais certeiro
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo ipsum, lacinia nec vulputate
+                    nec, maximus quis mi. Cras sed metus ut elit feugiat posuere sit amet sit amet erat. Etiam massa
+                    dui, vulputate dignissim malesuada posuere, lobortis a erat. Curabitur ut tempor urna, lacinia
+                    scelerisque eros. Sed quis dolor eget magna fringilla condimentum nec quis est. Duis mauris leo,
+                    iaculis nec metus vitae, maximus rhoncus massa. Suspendisse et egestas odio. Nullam accumsan nunc eu
+                    eros finibus, eu venenatis nunc pharetra. In sed risus aliquet, tristique elit id, faucibus dui.
+                </p>
+                <p>
+                    Cras euismod in urna et blandit. Fusce ut purus gravida lacus faucibus placerat. Aenean congue
+                    consectetur leo et porta. Ut dapibus euismod congue. Suspendisse ac elementum ante. Phasellus eget
+                    tellus in enim fermentum porttitor. Nunc non turpis mi. Fusce in ligula mauris. Praesent maximus
+                    accumsan purus vitae congue. Curabitur ornare mauris mauris, ac tincidunt turpis placerat ac.
+                    Suspendisse sed metus et est dictum bibendum. Etiam in est est. Sed iaculis neque mauris, sed
+                    consequat nisi pulvinar sed. Phasellus mi arcu, dignissim sit amet varius a, luctus gravida nunc.
+                    Vivamus non ante eget lacus aliquet lobortis.
+                </p>
+            </article>
+            <form id="formRegister">
+                <label>Seu nome</label>
+                <span id="mensagemNomeUsuario" class="hide">Por favor, digite seu nome corretamente</span>
+                <input type="text" id="name" >
+                <label>E-mail</label>
+                <span id="mensagemEmailUsuario" class="hide">Por favor, digite o E-mail corretamente</span>
+                <input type="email" id="email" >
+                <label>CPF</label>
+                <span id="mensagemCPFUsuario" class="hide">Por favor, digite apenas números</span>
+                <input type="number" id="cpf" >
+                <span id="mensagemGenderUsuario" class="hide">Por favor, escolha um género</span>
+                <div class="gender">
+                    <label>
+                        <input type="radio" id="genderRadio" value="0">
+                        Masculino
+                    </label>
+                    <label>
+                        <input type="radio" id="genderRadio" value="1">
+                        Feminino
+                    </label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="special-selection">
+            <h3>
+                <span>
+                    Seleção especial
+                </span>
+            </h3>
+            <div class="grid">
+            </div>
+            <button id="gridButton">Ainda mais produtos aqui</button>
+        </div>
+        <div class="share-news">
+            <h3>
+                <span>
+                    Compartilhe a novidade
+                </span>
+            </h3>
+            <form id="form-news">
+                <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+                <div class="field">
+                    <label>
+                        Nome do seu amigo:
+                        <br>
+                        <span id="mensagemNomeAmigo" class="hide">Por favor, digite seu nome corretamente</span>
+                        <input type="text" id="namesfriend">
+                    </label>
+                    <label>
+                        E-mail
+                        <br>
+                        <span id="mensagemEmailAmigo" class="hide">Por favor, digite seu nome corretamente</span>
+                        <input type="email" id="emailsfriend">
+                    </label>
+                </div>
+                <button type="submit">Enviar agora</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Testando suas habilidades em HTML,CSS e JS.</p>
+        <p>Linx impulse</p>
+        <p>2019</p>
+    </footer>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
