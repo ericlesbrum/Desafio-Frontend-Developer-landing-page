@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body{
+    width: 100%;
+    min-height: 100vh;
     font-size: 15px;
     font-family: Helvetica, sans-serif, Arial;
     display: flex;
@@ -12,11 +14,54 @@ body{
     justify-content: center;
     align-items: center;
 }
+/*---Erro nos inputs----*/
+.wrong{
+    border: 1px solid red;
+}
+.wrongMensage{
+    color: red;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+.hide{
+    display: none;
+}
+/*--------------------------*/
+
+
+/*Configuração padrão de botões*/
+.content-form form > button,
+.special-selection > button,
+.share-news form > button,
+.grid .box button
+{
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px 0px #707070;
+    outline: none;
+    background-color: white;
+    color: grey;
+    transition: 0.5s;
+}
+.content-form form > button:hover,
+.special-selection > button:hover,
+.share-news form > button:hover,
+.grid .box button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+/*--------------------------*/
+
+
+/*-Configurações do header--*/
 header{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     margin-bottom: 90px;
     background-color: grey;
@@ -33,29 +78,225 @@ header h4 span{
     font-weight: 400;
 }
 header h4 strong{
-    font-size: 1.3rem;
+    font-size: 1.9rem;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 header h4 span:first-child{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 5px;
 }
 header h4 span:last-child{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
-nav ul{
+/*--------------------------*/
+
+
+/*---Navbar----*/
+header nav{
     display: flex;
-    list-style: none;
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+    max-width: 780px;
     flex-wrap: wrap;
+    justify-content: center;
 }
-nav ul li{
-    background-color: white;
-    width: 160px;
-    padding: 10px 20px;
-    margin: 20px;
+header nav ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
 }
-nav ul li a{
+header nav ul li a{
+    display: block;
     text-decoration: none;
+    background-color: white;
+    color: grey;
+    width: 160px;
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    transition: 0.3s;
 }
+header nav ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*--------------------------*/
+
+
+/*---Main----*/
+main{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+/*--------------------------*/
+
+
+/*----Configuração paragrafo----*/
+.content-form > p,
+.share-news > p{
+    display: flex;
+    margin: 0 auto;
+    width: 33%;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+/*--------------------------*/
+
+/*---Primeiro formulario----*/
+.content-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.content-form article{
+    width: 60%;
+}
+.content-form form{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.content-form form >input{
+    margin-bottom: 30px;
+}
+.content-form article h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.content-form article p{
+    margin-bottom: 25px;
+}
+.content-form form > input,
+.share-news .field label> input{
+    width: 100%;
+    height: 30px;
+}
+.content-form form .gender{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.content-form form >label{
+    margin-bottom: 10px;
+}
+/*--------------------------*/
+
+/*-----Seleção especial-----*/
+.special-selection{
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 130px;
+}
+.special-selection > button,
+    .share-news form > button{
+    width: 300px;
+}
+.special-selection h3,
+    .share-news h3{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 50px; 
+}
+.special-selection h3 span,
+    .share-news h3 span { 
+    background:#fff; 
+    padding:0 30px; 
+}
+/*--------------------------*/
+
+
+/*---Grid----*/
+.special-selection .grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin-bottom: 50px;
+}
+.grid .box {
+    width: 100%;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+.grid .box .box-content{
+    text-align: left;
+    width: 100%;
+}
+.grid .box .box-content p:nth-child(3){
+    font-size: 0.75rem;
+}
+.grid .box .box-content p:nth-child(4){
+    font-weight: bold;
+    font-size: 1rem;
+}
+.grid .box .box-content h5{
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+.grid .box .box-content p{
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+}
+.grid .box .box-content button{
+    width: 100%;
+    font-size: 0.95rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/*--------------------------*/
+
+
+/*----Compartilhe a novidade---*/
+.share-news{
+    margin-bottom: 150px;
+    width: 100%;
+    text-align: center;
+}
+.share-news p{
+    margin-bottom: 50px;
+}
+.share-news form .field{
+    text-align: left;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.share-news form .field label{
+    width: 45%;
+    line-height: 40px;
+}
+/*--------------------------*/
+
+
+/*---Rodapé----*/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    line-height: 30px;
+    color: white;
+    width: 100%;
+    background-color: grey;
+}
+/*--------------------------*/
