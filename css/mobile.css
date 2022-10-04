@@ -1,0 +1,174 @@
+@media screen and (max-width: 420px) {
+    /*-Configurações do header--*/
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: grey;
+        padding: 20px;
+    }
+    header h4{
+        margin-top: 40px;
+        color: white;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    /*--------------------------*/
+
+
+    /*---Navbar----*/
+    header nav{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 400px;
+        padding: 0 10px;
+    }
+    header nav ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        margin-bottom: 80px;
+    }
+    /*--------------------------*/
+
+
+    /*---Main----*/
+    main{
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 15px 0 15px;
+    }
+    /*--------------------------*/
+
+
+    /*---Primeiro formulario----*/
+    .content-form{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .content-form article{
+        width: 100%;
+    }
+    .content-form form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content-form form >input{
+        margin-bottom: 30px;
+    }
+    .content-form article h3{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .content-form article p{
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+    .content-form form > input,
+    .share-news .field label> input{
+        width: 100%;
+        height: 30px;
+    }
+    .content-form form .gender{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+    .content-form form >label{
+        margin-bottom: 10px;
+    }
+    /*--------------------------*/
+
+
+    /*-----Seleção especial-----*/
+    .special-selection{
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 130px;
+    }
+    .special-selection > button,
+        .share-news form > button{
+        width: 300px;
+    }
+    .special-selection h3,
+        .share-news h3{
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid #000; 
+        line-height: 0.1em;
+        margin: 10px 0 50px; 
+    }
+    .special-selection h3 span,
+        .share-news h3 span { 
+        background:#fff; 
+        padding:0 30px; 
+    }
+    .special-selection #gridButton{
+        margin-top: 30px;
+    }
+    /*--------------------------*/
+
+
+    /*----Compartilhe a novidade---*/
+    .share-news{
+        margin-bottom: 110px;
+        width: 100%;
+        text-align: center;
+    }
+    .share-news p{
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    .share-news form .field{
+        text-align: left;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .share-news form .field label{
+        width: 100%;
+        line-height: 40px;
+    }
+    /*--------------------------*/
+
+    
+    /*---Rodapé----*/
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 90px 0 45px 0;
+        line-height:20px;
+        color: white;
+        width: 100%;
+        background-color: grey;
+    }
+    /*--------------------------*/
+}
